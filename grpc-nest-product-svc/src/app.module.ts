@@ -10,7 +10,7 @@ import { ProductModule } from './product/product.module';
       type: 'postgres',
       host: 'localhost',
       port: 5432,
-      database: 'micro_auth',
+      database: 'micro_product',
       username: 'postgres',
       password: 'postgres',
       entities: ['dist/**/*.entity.{ts,js}'],

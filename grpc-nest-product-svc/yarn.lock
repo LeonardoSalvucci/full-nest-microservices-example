@@ -2699,8 +2699,8 @@ grapheme-splitter@^1.0.4:
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
 
 "grpc-nest-proto@git+https://github.com/LeonardoSalvucci/grpc-nest-proto.git":
-  version "1.0.0"
-  resolved "git+https://github.com/LeonardoSalvucci/grpc-nest-proto.git#37e1dfb0df43d8ee944dcb93e5ecd02ec805a37f"
+  version "1.0.2"
+  resolved "git+https://github.com/LeonardoSalvucci/grpc-nest-proto.git#cd5fe0e5c2a49ba642cc9c5064b14030b4506a17"
 
 has-flag@^3.0.0:
   version "3.0.0"

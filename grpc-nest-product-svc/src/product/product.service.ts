@@ -54,6 +54,7 @@ export class ProductService {
   public async decreaseStock({
     id,
     orderId,
+    quantity,
   }: DecreaseStockRequestDto): Promise<DecreaseStockResponse> {
     const product: Product = await this.repository.findOne({
       select: ['id', 'stock'],
@@ -67,7 +68,7 @@ export class ProductService {
       };
     }
 
-    if (product.stock < 1) {
+    if (product.stock < quantity) {
       return {
         error: ['Product out of stock'],
         status: HttpStatus.CONFLICT,
@@ -84,7 +85,7 @@ export class ProductService {
       };
     }
 
-    product.stock -= 1;
+    product.stock -= quantity;
 
     await this.repository.save(product);
 
